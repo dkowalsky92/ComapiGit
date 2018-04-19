@@ -158,6 +158,8 @@ class CommitTableViewCell: BaseTableViewCell {
         }
         if let name = commit.committer?.login {
             authorNameLabel.text = name
+        } else {
+            authorNameLabel.text = commit.commitData.committer.name
         }
     }
 }
