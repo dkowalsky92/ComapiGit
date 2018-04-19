@@ -65,7 +65,7 @@ class ReleasesViewController: BaseViewController {
     }
     
     override func navigation() {
-        title = "Release \(viewModel.repo.name)"
+        title = "\(viewModel.repo.name)"
         let backButton = UIBarButtonItem(image: UIImage(named: "back"), style: .plain, target: self, action: #selector(back))
         navigationItem.leftBarButtonItem = backButton
     }
